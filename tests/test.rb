@@ -39,4 +39,32 @@ class TestProblem < Minitest::Test
   def test_delete_nil
     assert_equal @p.delete_nil, 30
   end
+
+  def test_blackjack
+    assert_equal @p.blackjack(3, 4, 5, 6, 3), true
+    assert_equal @p.blackjack(3, 11, 10), false
+    assert_equal @p.blackjack(10, 11), true
+  end
+
+  def test_even
+    assert_equal @p.even([1, 3, 7, 4, 9, 8]), 4
+  end
+
+  def test_temperature_bot
+    assert_equal @p.temperature_bot(18), "I like this temperature"
+    assert_equal @p.temperature_bot(21), "I like this temperature"
+    assert_equal @p.temperature_bot(22), "This is uncomfortable for me"
+    assert_equal @p.temperature_bot(-3), "This is uncomfortable for me"
+  end
+
+  def test_sum_over_50
+    assert_equal @p.sum_over_50([29, 52, 77, 102]), 231
+    assert_equal @p.sum_over_50([5, 11, 50]), 0
+    assert_equal @p.sum_over_50([4, 8, 15, 16, 23, 42]), 0
+    assert_equal @p.sum_over_50([300, 22, 1, 55, 42]), 355
+  end
+  
+  def test_dave
+    assert_equal @p.dave, "My mind is going Dave"
+  end
 end

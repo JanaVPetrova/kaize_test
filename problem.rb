@@ -35,4 +35,35 @@ class Problem
     arr = [1, 4, nil, 9, 16, nil].delete_if{|x| x.nil?}
     arr = arr.inject(0) {|sum, number| sum + number}
   end
+
+  def blackjack(*nums)
+    sum = nums.reduce(:+)
+    if sum == 21
+      true
+    else
+      false
+    end
+  end
+
+  def even(arr)
+    arr.find(&:even?)
+  end
+
+  def temperature_bot(temp)
+    case temp
+    when 18..21
+      "I like this temperature"
+    else
+      "This is uncomfortable for me"
+    end
+  end
+
+  def sum_over_50(arr)
+    arr.reject{|x| x <= 50}.inject(0){|sum, x| sum + x}
+  end
+
+  def dave
+    name = "Dave"
+    str = "My mind is going #{name}"
+  end
 end
