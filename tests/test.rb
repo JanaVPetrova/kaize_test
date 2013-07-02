@@ -67,4 +67,12 @@ class TestProblem < Minitest::Test
   def test_dave
     assert_equal @p.dave, "My mind is going Dave"
   end
+
+  def test_home_on_the_range
+    assert_equal @p.home_on_the_range, 4494
+  end
+ 
+  def test_arr_item_removal
+    assert_equal @p.arr_item_removal, [:b, :q]
+  end
 end

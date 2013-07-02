@@ -66,4 +66,12 @@ class Problem
     name = "Dave"
     str = "My mind is going #{name}"
   end
+
+  def home_on_the_range
+    (1..100).to_a[11...95].reduce(:+)
+  end
+ 
+  def arr_item_removal
+    ([:r, :u, :b, :e, :q, :u, :e] & [:b, :q])
+  end
 end
