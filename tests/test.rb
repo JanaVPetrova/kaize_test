@@ -83,4 +83,13 @@ class TestProblem < Minitest::Test
   def test_violets_color
     assert_equal @p.violets_color, "blue"
   end
+
+  def test_sugar
+    assert_equal 2.+(2), 2 + 2
+    assert_equal 40.+(2), 42
+  end
+
+  def teat_helloworld
+    assert_equal str, "HelloWorld"
+  end
 end

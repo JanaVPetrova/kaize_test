@@ -84,4 +84,9 @@ class Problem
     violets = "blue" and "red"
     violets
   end
+
+  def helloworld
+    str = "Hello" "World"
+    str
+  end
 end
