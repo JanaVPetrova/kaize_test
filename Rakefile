@@ -1,7 +1,8 @@
-require 'bundler/setup'
+require 'rake/testtask'
 
 task :default => [:test]
 
-task :test do
-  ruby 'tests/test.rb'
+Rake::TestTask.new do |t|
+  t.libs << ["tests", "problems"]
+  t.pattern = 'tests/*.rb'
 end

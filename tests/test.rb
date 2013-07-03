@@ -1,4 +1,4 @@
-require 'tests/test_helper.rb'
+require 'test_helper'
 
 class TestProblem < Minitest::Test
   def setup
