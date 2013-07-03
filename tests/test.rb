@@ -75,4 +75,12 @@ class TestProblem < Minitest::Test
   def test_arr_item_removal
     assert_equal @p.arr_item_removal, [:b, :q]
   end
+
+  def test_roses_color
+    assert_equal @p.roses_color, "red"
+  end
+
+  def test_violets_color
+    assert_equal @p.violets_color, "blue"
+  end
 end

@@ -74,4 +74,14 @@ class Problem
   def arr_item_removal
     ([:r, :u, :b, :e, :q, :u, :e] & [:b, :q])
   end
+
+  def roses_color
+    roses = "blue" && "red"
+    roses
+  end
+
+  def violets_color
+    violets = "blue" and "red"
+    violets
+  end
 end
