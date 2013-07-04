@@ -30,7 +30,7 @@ class Problem
       else "FizzBuzz"
     end
   end
-  
+
   def delete_nil
     arr = [1, 4, nil, 9, 16, nil].delete_if{|x| x.nil?}
     arr = arr.inject(0) {|sum, number| sum + number}
@@ -70,7 +70,7 @@ class Problem
   def home_on_the_range
     (1..100).to_a[11...95].reduce(:+)
   end
- 
+
   def arr_item_removal
     ([:r, :u, :b, :e, :q, :u, :e] & [:b, :q])
   end
