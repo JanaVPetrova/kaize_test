@@ -92,6 +92,6 @@ class TestProblem < Minitest::Test
   end
 
   def teat_helloworld
-    assert_equal str, "HelloWorld"
+    assert_equal @p.helloworld, "HelloWorld"
   end
 end
