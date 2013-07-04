@@ -2,7 +2,12 @@ GEM
   remote: https://rubygems.org/
   specs:
     minitest (5.0.5)
+    multi_json (1.7.7)
     rake (10.1.0)
+    simplecov (0.7.1)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.7.1)
+    simplecov-html (0.7.1)
 
 PLATFORMS
   ruby
@@ -10,3 +15,4 @@ PLATFORMS
 DEPENDENCIES
   minitest
   rake
+  simplecov
