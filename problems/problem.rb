@@ -89,4 +89,21 @@ class Problem
     str = "Hello" "World"
     str
   end
+
+  def or_equal(b, value)
+    b ||= value
+    b
+  end
+
+  def brackets_and_searches(str, char)
+    str[char]
+  end
+
+  def alt_arr_notation
+    yield
+  end
+
+  def set_intersection(arra, arrb)
+    arra & arrb
+  end
 end

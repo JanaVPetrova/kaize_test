@@ -91,7 +91,29 @@ class TestProblem < Minitest::Test
     assert_equal 40.+(2), 42
   end
 
-  def teat_helloworld
+  def test_helloworld
     assert_equal @p.helloworld, "HelloWorld"
+  end
+
+  def test_or_equal
+    assert_equal @p.or_equal(8, "rubeque"), 8
+    assert_equal @p.or_equal(false, "rubeque"), "rubeque"
+  end
+
+  def test_brackets_and_searches
+    assert_equal @p.brackets_and_searches("helloworld", "e"), "e"
+    assert_equal @p.brackets_and_searches("what", "e"),  nil
+    assert_equal @p.brackets_and_searches("rubeque", "e"), "e"
+    assert_equal @p.brackets_and_searches("E", "e"), nil
+  end
+
+  def test_alt_arr_notation
+    assert_equal @p.alt_arr_notation{%w(hello world)}, ["hello", "world"]
+    assert_equal @p.alt_arr_notation{%w{1 2 3 4}}, ["1", "2", "3", "4"]
+    assert_equal @p.alt_arr_notation{%w?remembrance of things past?}, ["remembrance", "of", "things", "past"]
+  end
+
+  def test_set_intersection
+    assert_equal @p.set_intersection([ 1, 1, 3, 5 ], [ 1, 2, 3 ]), [ 1, 3 ]
   end
 end
