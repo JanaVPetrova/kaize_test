@@ -106,10 +106,4 @@ class Problem
   def set_intersection(arra, arrb)
     arra & arrb
   end
-
-  def create_character
-    thorin = Character.new
-    thorin.name = "Thorin Oakenshield"
-    thorin.quote = "Some courage and some wisdom, blended in measure."
-  end
 end
