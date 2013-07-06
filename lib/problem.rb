@@ -106,4 +106,23 @@ class Problem
   def set_intersection(arra, arrb)
     arra & arrb
   end
+
+  def irish?(name)
+    (name =~ /[ ]\w'/) ? "Irish" : "Not Irish"
+  end
+
+  def caution_case(obj)
+    case obj
+    when obj
+      true
+    else
+      false
+    end
+  end
+
+  def random_values
+    (0..1000000).inject(0.0) do |sum, _| 
+      sum += rand(14) + rand(14)
+    end
+  end
 end

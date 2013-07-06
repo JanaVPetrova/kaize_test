@@ -19,14 +19,9 @@ class Queue
   end
 
   def push(to_be_pushed)
-    if to_be_pushed.kind_of?(Array)
-      to_be_pushed.each { |x| @arr << x }
-      true
-    elsif @arr << to_be_pushed
-      true
-    else
-      false
-    end
+    @arr.push(to_be_pushed)
+    @arr.flatten! if to_be_pushed.is_a? Array
+    @arr
   end
 
   def to_a

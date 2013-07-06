@@ -116,4 +116,20 @@ class TestProblem < Minitest::Test
   def test_set_intersection
     assert_equal @p.set_intersection([ 1, 1, 3, 5 ], [ 1, 2, 3 ]), [ 1, 3 ]
   end
+
+  def test_irish
+    assert_equal @p.irish?("Miles O'Brien"), "Irish"
+    assert_equal @p.irish?("Barack Obama"), "Not Irish"
+  end
+
+  def test_caution_case
+    assert_equal @p.caution_case(1), true
+    assert_equal @p.caution_case([1, 2]), true
+    assert_equal @p.caution_case({1=>2}), true
+    assert_equal @p.caution_case((1..2)), false
+  end
+
+  def test_random_values
+    assert_equal (@p.random_values/1000000.0).round, 13
+  end
 end

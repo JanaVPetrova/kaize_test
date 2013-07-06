@@ -9,8 +9,8 @@ class QueueTest < Minitest::Test
   end
 
   def test_push
-    assert_equal @queue.push(9), true
-    assert_equal @queue.push([4, 2]), true
+    assert_equal @queue.push(9), [5, 6, 7, 8, 9]
+    assert_equal @queue.push([4, 2]), [5, 6, 7, 8, 9, 4, 2]
   end
 
   def test_to_a
