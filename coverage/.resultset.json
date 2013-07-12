@@ -1,7 +1,38 @@
 {
   "Unit Tests": {
     "coverage": {
-      "/home/vagrant/kaize_test/lib/problem.rb": [
+      "/home/janapetrova/projects/kaize_test/lib/kaize_test.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/janapetrova/projects/kaize_test/lib/kaize_test/character_user.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/janapetrova/projects/kaize_test/lib/kaize_test/character.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/janapetrova/projects/kaize_test/lib/kaize_test/problem.rb": [
         1,
         1,
         1,
@@ -131,31 +162,7 @@
         null,
         null
       ],
-      "/home/vagrant/kaize_test/lib/character.rb": [
-        1,
-        1,
-        null
-      ],
-      "/home/vagrant/kaize_test/lib/character_user.rb": [
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/vagrant/kaize_test/lib/queue.rb": [
+      "/home/janapetrova/projects/kaize_test/lib/kaize_test/queue.rb": [
         1,
         1,
         null,
@@ -187,7 +194,7 @@
         null,
         null
       ],
-      "/home/vagrant/kaize_test/test/character_user_test.rb": [
+      "/home/janapetrova/projects/kaize_test/test/kaize_test/character_user_test.rb": [
         1,
         1,
         2,
@@ -202,7 +209,7 @@
         null,
         null
       ],
-      "/home/vagrant/kaize_test/test/queue_test.rb": [
+      "/home/janapetrova/projects/kaize_test/test/kaize_test/queue_test.rb": [
         1,
         1,
         3,
@@ -223,7 +230,7 @@
         null,
         null
       ],
-      "/home/vagrant/kaize_test/test/test.rb": [
+      "/home/janapetrova/projects/kaize_test/test/kaize_test/test.rb": [
         1,
         null,
         1,
@@ -361,7 +368,7 @@
         null
       ]
     },
-    "timestamp": 1373022067
+    "timestamp": 1373630609
   },
   "Unknown Test Framework": {
     "coverage": {

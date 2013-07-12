@@ -1,3 +1,4 @@
+require "kaize_test/character"
 
 class CharacterUser
   def thorin_creator
@@ -10,7 +11,6 @@ class CharacterUser
 
   def stephen_creator
     stephen = Character.new
-
     stephen.name = "Stephen Dedalus"
     stephen
   end
